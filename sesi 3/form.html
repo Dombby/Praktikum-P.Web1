@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</form></title>
+</head>
+<body>
+       <h2>Form Input</h2>
+<form action="#" method="post">
+    <div class="form-row"> 
+        <label>Nama Lengkap</label>
+        <input type="text" name="nama" required>
+    </div>
+    <br>
+    <label>Jenis Kelamin</label>
+    <div class="radio-group">
+        <label><input type="radio" name="jk" value="Laki-laki" required> Laki-laki</label>
+        <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+    </div>
+    <br>
+    <label>Hobi</label>
+    <div class="radio-group">        
+        <label><input type="checkbox" name="hobi" value="Membaca"> Membaca</label>
+        <label><input type="checkbox" name="hobi" value="Olahraga"> Olahraga</label>
+        <label><input type="checkbox" name="hobi" value="Musik"> Musik</label>
+    </div>
+    <br>
+    <div class="form-row">
+    <label>Program Studi</label>
+    <select name="prodi" required>
+        <option value="">-- Pilih Prodi --</option>
+        <option value="Informatika">Informatika</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+        <option value="Teknik Komputer">Teknik Komputer</option>
+    </select>
+    </div>
+    <br>
+    <div class="form-row">
+    <label>Alamat</label>
+    <textarea name="alamat" placeholder="masukkan alamat..."></textarea>
+    </div>
+    <button type="submit">Kirim</button>
+
+</form>
+</body>
+</html>
