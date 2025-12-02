@@ -3,38 +3,28 @@
 <head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Saya</title>
-    <link rel="stylesheet" href="style-profil.css">
+    <title>form</title>
 </head>
 <body>
-
-    <div class="container">
-        <div class="card">
-            <h1 class="nama">M. Daffaa Ramadhan</h1>
-            <p class="deskripsi">Mahasiswa | Penggemar Teknologi | Web Developer Pemula</p>
-
-            <hr>
-
-            <h2>Tentang Saya</h2>
-            <p>
-                Saya adalah mahasiswa yang tertarik pada dunia IT, khususnya dalam pemrograman
-                dan pengembangan web. Saya suka belajar hal baru dan terus mengembangkan kemampuan
-                di bidang teknologi.
-            </p>
-
-            <h2>Hobi</h2>
-            <ul>
-                <li>Ngoding</li>
-                <li>Gaming</li>
-                <li>Mendesain UI</li>
-                <li>Membaca</li>
-            </ul>
-
-            <h2>Kontak</h2>
-            <p>Email: daffaramadhan@example.com</p>
-            <p>Instagram: @daffaramadhan</p>
-        </div>
-    </div>
-
+    <form action="">
+        <label for="nama">Nama :</label><br>
+        <input type="text" id="nama" name="nama" required placeholder="misal: Budi"><br>
+        <label for="nik">NIK :</label><br>
+        <input type="text" id="nik" name="nik" size="10" maxlength="10" required placeholder="misal: 123"><br>
+        <label for="tanggal_mulai">Tanggal mulai:</label><br>
+        <input type="date" id="date" name="tanggal_mulai" required min="2022-08-11"><br>
+        <label for="gaji_pokok">Gaji pokok:</label><br>
+        <input type="number" id="gaji_pokok" name="gaji_pokok" required min="1000000" step="1000"><br>
+        <label for="">Status Karyawan:</label><br>
+        <input type="radio" id="tetap" name="status_keryawan">
+        <label for="tetap">Tetap</label><br>
+        <input type="radio" id="kontrak" name="status_keryawan">
+        <label for="radio">Kontrak</label><br>
+        <input type="radio" id="magang" name="status_keryawan">
+        <label for="magang">Magang</label><br>
+        <input type="submit" id="btn_submit" name="btn_submit" value="Submit">
+        <input type="reset" id="btn_reset" name="btn_reset" value="Reset">
+    </form>
+</body>
 </body>
 </html>
