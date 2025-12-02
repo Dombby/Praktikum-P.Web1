@@ -15,9 +15,9 @@ body {
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-h1 {
+.h1 {
     text-align: center;
-    color: #333;
+    color: #a84545;
 }
 
 .foto {
@@ -33,8 +33,9 @@ h1 {
 .data p {
     font-size: 16px;
     margin: 8px 0;
+    color: cyan;
 }
 
-strong {
-    color: #333;
+.strong {
+    color: #8f3b3b;
 }
