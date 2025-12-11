@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="judul">Judul Awal</h1>
+  <p id="par1">Paragraf 1</p>
+
+  <input id="inputtext" type="text" value="Tulis sesuatu">
+  <button onclick="update()">Terapkan</button>
+
+  <script>
+    function update(){
+      const v = document.getElementById('inputtext').value;
+      document.getElementById('judul').innerHTML = v;
+      document.getElementById('par1').innerText = 'Anda menulis: ' + v;
+    }
+  </script>
+</body>
+</html>
