@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Event Demo</title></head>
+<body>
+  <h2 id="u1" onmouseover="sorot()" onmouseout="kelsorot()">Arahkan mouse ke saya</h2>
+  <h2 id="u2" onmousedown="tahan()" onmouseup="lepas()">Klik dan tahan</h2>
+  <br>
+  <label for="masukan">Ketik:</label>
+  <input id="masukan" onkeyup="tiru()">
+  <span id="hasil"></span>
+  <br><br>
+  <label for="nama">Nama:</label>
+  <input id="nama" type="text">
+  <button onclick="klik()">Klik</button>
+  <button onclick="ulangi()">Ulangi</button>
+  <span id="spanHasil"></span>
+
+  <script>
+    function sorot(){ document.getElementById('u1').innerText='Sudah disorot'; }
+    function kelsorot(){ document.getElementById('u1').innerText='Arahkan mouse ke saya'; }
+    function tahan(){ document.getElementById('u2').innerText='Lepasin...'; }
+    function lepas(){ document.getElementById('u2').innerText='Klik dan tahan'; }
+
+    function tiru(){
+      const v = document.getElementById('masukan').value;
+      document.getElementById('hasil').innerText = ' -> ' + v;
+    }
+
+    function klik(){
+      const v = document.getElementById('nama').value.trim();
+      const span = document.getElementById('spanHasil');
+      if(!v){ span.style.color='red'; span.innerText=' Inputan kosong'; }
+      else { span.style.color='blue'; span.innerText=' Halo, '+v; }
+    }
+    function ulangi(){
+      document.getElementById('nama').value='';
+      document.getElementById('spanHasil').innerText='';
+    }
+  </script>
+</body>
+</html>
